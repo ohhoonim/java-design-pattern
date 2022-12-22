@@ -59,7 +59,7 @@ public class ObserverTest {
         subscribersOfChannel = broker.getSubscribersCountOfChannel(ohhoonimChannel);
         assertEquals(3, subscribersOfChannel);
 
-
+        // 채널 추가 
         Channel cleanChannel = new Channel("가뿐한오전", userMatthew);
         channelsCountOfMatthew = broker.publish(cleanChannel);
         assertEquals(2, channelsCountOfMatthew);
