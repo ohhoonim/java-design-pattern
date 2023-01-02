@@ -5,5 +5,8 @@ public class PayApple implements PayMethod{
     public String pay() {
         return "pay apple";
     }
-    
+    @Override
+    public String toString() {
+        return "APPLE";
+    }
 }
