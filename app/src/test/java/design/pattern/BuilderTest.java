@@ -12,14 +12,11 @@ import design.pattern.builder.UserBuilder;
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 public class BuilderTest {
     // 생성자(Constructor)만 사용할 때 발생할 수 있는 문제를 
-
-    // 복잡한 객체들을 단계별로 생성할 수 있도록도 해줄수 있다. 디렉터까지 사용하면... 
-
     @Test
     public void 옵션이_많은_객체의_생성자() {
         // 이거 언제다 순서 맞춰줌?
         /*
-         User user = new User(
+        User user = new User(
             name,
             age, 
             address, 
@@ -30,10 +27,14 @@ public class BuilderTest {
             company, 
             youtubeId, 
             naverId);
-         */
-        
-    }
-    // settier로 개선
+            */
+            
+        }
+    // Gof에서 설명하는 빌더 패턴을 이용하면 복잡한 객체들을 단계별로 
+    // 생성할 수 있도록도 해줄수 있다. 하지만 여기서는 생성자를 사용했을때
+    // 발생하는 문제에만 집중하자
+
+    // 생성자만 사용했을때 단점을 settier로 개선
     @Test
     public void 세터를_사용하면_그나마_좋아져요 () {
         User matthew = new User("matthew");
@@ -89,4 +90,6 @@ public class BuilderTest {
         assertEquals("레이", car.getName());
 
     }
+
+    // Annotation Processor
 }
