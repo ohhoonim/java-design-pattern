@@ -5,5 +5,6 @@
 - [Strategy Pattern](https://youtu.be/31wI-c7ExiQ)
 - [Singleton Pattern](https://youtu.be/0XCoSkhznQ8)
 - [Proxy Pattern](https://youtu.be/o0EnIJM-eSc)
-
-(Observer pattern은 영상이 없습니다.)
+- [Builder Pattern](https://youtu.be/rKpCtQL-C08)
+- [Factory Method Pattern](https://youtu.be/Ve7PjKqQ7LU)
+- [Obsever Pattern](https://youtu.be/LjBSDgGZYMk)
