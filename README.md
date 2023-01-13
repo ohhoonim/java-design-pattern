@@ -1,4 +1,4 @@
-# Java 필수 디자인패턴
+# Java 디자인패턴
 
 ## Youtube 
 
